@@ -1,0 +1,82 @@
+body,
+html {
+	font-family: sans-serif;
+	font-size: .8em;
+}
+
+.albums {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	margin: 1em;
+	float: left;
+}
+
+.albums article {
+	position: relative;
+	margin-top: 0px;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 305px;
+	padding: 2em;
+	box-sizing: border-box;
+	animation: bouncingdown 1s forwards;
+}
+
+@keyframes bouncingDown {
+	0% {
+		margin-top: -305px;
+	}
+	25% {
+		margin-top: 0;
+	}
+	38% {
+		margin-top: -150px;
+	}
+	50% {
+		margin-top: 0;
+	}
+	63% {
+		margin-top: 75px;
+	}
+	75% {
+		margin-top: 0;
+	}
+	88% {
+		margin-top: -38px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+
+.albums:hover article {
+	animation: bouncingUp 1s forwards;
+	cursor: pointer;
+}
+
+@keyframes bouncingUp {
+	0% {
+		margin-top: 0;
+	}
+	25% {
+		margin-top: -305px;
+	}
+	38% {
+		margin-top: -105px;
+	}
+	50% {
+		margin-top: -305px;
+	}
+	63% {
+		margin-top: -200px;
+	}
+	75% {
+		margin-top: -305px;
+	}
+	88% {
+		margin-top: -280px;
+	}
+	100% {
+		margin-top: -305px;
+	}
+}
