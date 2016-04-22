@@ -1,15 +1,48 @@
+* {
+	margin: 0;
+}
+
 body,
 html {
+	  
 	font-family: sans-serif;
 	font-size: .8em;
+	height: 100%;
+	background-color: maroon;
+	background-image: url(download_wall_singer_large.jpg);
+}
+
+
+.container {
+	min-height: 100%;
+	/* moet gelijk zijn ana deh oogte van de footer */
+	margin-bottom: -40px;
+
+	opacity: 0.8;
+}
+
+.container:after {
+	display: block;
+	
+}
+
+.site-footer,
+.container:after {
+	height: 40px;
+}
+
+.site-footer {
+	background: black;
+	opacity: 1.0;
 }
 
 .albums {
 	width: 300px;
 	height: 300px;
 	overflow: hidden;
-	margin: 1em;
+	margin: 0.8em;
 	float: left;
+	opacity: 1.0;
 }
 
 .albums article {
@@ -51,7 +84,7 @@ html {
 
 .albums:hover article {
 	animation: bouncingUp 1s forwards;
-	cursor: pointer;
+	 cursor: url(metalhand.cur), auto;
 }
 
 @keyframes bouncingUp {
@@ -79,4 +112,18 @@ html {
 	100% {
 		margin-top: -305px;
 	}
+}
+
+
+#validatie{
+max-height: 40px;
+max-width: 200px;
+margin-top: 40px;
+
+}
+
+article{
+
+font-size: 1.4em;
+
 }
